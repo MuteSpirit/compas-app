@@ -152,7 +152,8 @@ public class Engine implements Jsonable
         serializer = SharedPrefsSerializer.instance();
         game = new GameImpl(persistencyProvider, serializer);
         game.getPlayer().addPlayerEventsListener(new PlayerEventsListenerImpl());
-        playerLevel.onNext(game.getPlayer().getPlayerProps().getLevel());
+        // playerLevel.onNext(game.getPlayer().getPlayerProps().getLevel());
+        playerLevel.onNext(5); // set max level by default
         fractionStream.onNext(game.getPlayer().getPlayerProps().getFraction());
         Player.STATE ps = game.getPlayer().getPlayerProps().getState();
         Jsonable jso = serializer.deserialize(COUNTDOWN);
