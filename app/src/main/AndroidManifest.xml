@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="net.afterday.compas">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- package="net.afterday.compas" -->
     <uses-permission android:name="android.permission.ACCESS_GPS" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
@@ -32,7 +32,8 @@
         android:permission="">
         <activity android:name="net.afterday.compas.MainActivity"
             android:configChanges="keyboardHidden|screenSize"
-            android:label="PDA Compass v.1813 GM">
+            android:label="PDA Compass v.1813 GM"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
@@ -42,20 +43,21 @@
             android:label="HiddenActivity"
             android:launchMode="singleTask"
             android:theme="@android:style/Theme.NoDisplay"
-            android:screenOrientation="reverseLandscape">
+            android:screenOrientation="reverseLandscape"
+            android:exported="true">
         </activity>
-        <service android:name="net.afterday.compas.LocalMainService">
+        <service android:name="net.afterday.compas.LocalMainService" android:exported="true">
             <intent-filter android:icon="@mipmap/ic_launcher">
                 <action android:name="android.net.wifi.SCAN_RESULTS">
                 </action>
             </intent-filter>
         </service>
-        <receiver android:name=".sensors.WiFi.WifiImpl$WifiReceiver">
+        <receiver android:name=".sensors.WiFi.WifiImpl$WifiReceiver" android:exported="true">
             <intent-filter android:icon="@mipmap/ic_launcher">
                 <action android:name="WifiManager.SCAN_RESULTS_AVAILABLE_ACTION"></action>
             </intent-filter>
         </receiver>
-        <receiver android:name=".ActionsReceiver">
+        <receiver android:name=".ActionsReceiver" android:exported="false">
             <intent-filter>
                 <action android:name="ServiceControlls"></action>
             </intent-filter>
@@ -66,6 +68,7 @@
         <meta-data android:name="com.google.firebase.messaging.default_notification_icon"
 
                    android:resource="@mipmap/ic_notification" />
+
     </application>
 
     <uses-permission android:name="android.permission.INTERNET" />

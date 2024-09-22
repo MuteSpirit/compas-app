@@ -7,7 +7,7 @@
     tools:context="net.afterday.compas.MainActivity"
     android:keepScreenOn="true">
 
-    <androidx.percentlayout.widget.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    <androidx.percentlayout.widget.PercentRelativeLayout
         android:layout_width="wrap_content"
         android:layout_centerInParent="false"
         android:background="@drawable/popup_background"
