@@ -1,6 +1,6 @@
 package net.afterday.compas.sensors;
 
-import io.reactivex.Observable;
+import io.reactivex.rxjava3.core.Observable;
 
 /**
  * Created by Justas Spakauskas on 1/28/2018.

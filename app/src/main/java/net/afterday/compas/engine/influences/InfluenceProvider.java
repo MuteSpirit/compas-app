@@ -1,6 +1,6 @@
 package net.afterday.compas.engine.influences;
 
-import io.reactivex.Observable;
+import io.reactivex.rxjava3.core.Observable;
 
 /**
  * Created by spaka on 4/2/2018.

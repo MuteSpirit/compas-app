@@ -13,8 +13,8 @@ import net.afterday.compas.settings.SettingsListener;
 
 import java.util.concurrent.TimeUnit;
 
-import io.reactivex.Observable;
-import io.reactivex.disposables.Disposable;
+import io.reactivex.rxjava3.core.Observable;
+import io.reactivex.rxjava3.disposables.Disposable;
 
 /**
  * Created by spaka on 7/2/2018.

@@ -13,9 +13,9 @@ import net.afterday.compas.sensors.WiFi.WiFi;
 
 import java.util.List;
 
-import io.reactivex.Observable;
-import io.reactivex.subjects.BehaviorSubject;
-import io.reactivex.subjects.Subject;
+import io.reactivex.rxjava3.core.Observable;
+import io.reactivex.rxjava3.subjects.BehaviorSubject;
+import io.reactivex.rxjava3.subjects.Subject;
 
 /**
  * Created by Justas Spakauskas on 4/2/2018.

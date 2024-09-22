@@ -6,7 +6,7 @@ import net.afterday.compas.core.player.Player;
 
 import java.util.List;
 
-import io.reactivex.Single;
+import io.reactivex.rxjava3.core.Single;
 import java8.util.Optional;
 
 /**

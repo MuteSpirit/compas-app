@@ -16,8 +16,8 @@ import net.afterday.compas.util.Fonts;
 
 import java.util.concurrent.TimeUnit;
 
-import io.reactivex.Observable;
-import io.reactivex.disposables.Disposable;
+import io.reactivex.rxjava3.core.Observable;
+import io.reactivex.rxjava3.disposables.Disposable;
 
 /**
  * Created by Justas Spakauskas on 3/20/2018.

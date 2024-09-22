@@ -2,7 +2,7 @@ package net.afterday.compas.engine.influences.GpsInfluences;
 
 import net.afterday.compas.sensors.Gps.Gps;
 
-import io.reactivex.Observable;
+import io.reactivex.rxjava3.core.Observable;
 
 /**
  * Created by spaka on 6/7/2018.

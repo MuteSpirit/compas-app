@@ -16,8 +16,8 @@ import net.afterday.compas.sensors.Battery.Battery;
 import net.afterday.compas.settings.Settings;
 import net.afterday.compas.util.Fonts;
 
-import io.reactivex.Observable;
-import io.reactivex.subjects.PublishSubject;
+import io.reactivex.rxjava3.core.Observable;
+import io.reactivex.rxjava3.subjects.PublishSubject;
 
 
 /**

@@ -6,9 +6,9 @@ import net.afterday.compas.core.inventory.Inventory;
 import net.afterday.compas.core.inventory.items.Events.AddItem;
 import net.afterday.compas.core.inventory.items.Item;
 
-import io.reactivex.Observable;
-import io.reactivex.subjects.PublishSubject;
-import io.reactivex.subjects.Subject;
+import io.reactivex.rxjava3.core.Observable;
+import io.reactivex.rxjava3.subjects.PublishSubject;
+import io.reactivex.rxjava3.subjects.Subject;
 
 /**
  * Created by Justas Spakauskas on 3/25/2018.

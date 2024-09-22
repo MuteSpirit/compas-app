@@ -6,6 +6,7 @@ import androidx.core.util.Pair;
 import android.view.animation.LinearInterpolator;
 
 import net.afterday.compas.R;
+
 import net.afterday.compas.core.gameState.Frame;
 import net.afterday.compas.core.player.Impacts;
 import net.afterday.compas.core.player.Player;
@@ -23,10 +24,10 @@ import java.util.Timer;
 import java.util.TimerTask;
 import java.util.concurrent.TimeUnit;
 
-import io.reactivex.Observable;
-import io.reactivex.Scheduler;
-import io.reactivex.android.schedulers.AndroidSchedulers;
-import io.reactivex.disposables.Disposable;
+import io.reactivex.rxjava3.core.Observable;
+import io.reactivex.rxjava3.core.Scheduler;
+import io.reactivex.rxjava3.android.schedulers.AndroidSchedulers;
+import io.reactivex.rxjava3.disposables.Disposable;
 
 /**
  * Created by spaka on 5/3/2018.
